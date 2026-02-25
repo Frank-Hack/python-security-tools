@@ -1,0 +1,12 @@
+### CVE Lookup (NVD)
+
+
+pip install requests rich
+
+
+```bash
+pip install requests rich
+python intel/cve_lookup.py -k apache -n 15
+python intel/cve_lookup.py -k openssl --min-cvss 7.0 -n 20
+python intel/cve_lookup.py -k wordpress -n 30 --csv-out cves.csv
+python intel/cve_lookup.py -k nginx -n 10 --json-out cves.json
